@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+  <header class="header">
+    <h1 class="title">ROCK PAPER SCISSORS</h1>
+  </header>
+  <main class="main">
+    <div class="scoreboard">
+      <h2 class="score-info" id="scoreInfo">Choose your weapon</h2>
+      <h3 class="score-message" id="scoreMessage"> First to 5 points wins</h3>
+      <div class="scores-container">
+        <div class="score-box">
+          <div class="pick" id="playerPick">❔</div>
+          <p class="score" id="playerScore">Player: 0</p>
+        </div>
+        <div class="score-box">
+          <div class="pick" id="computerPick">❔</div>
+          <p class="score" id="computerScore">Computer: 0</p>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="btn btn-square" id="rockBtn">
+        <div class="pick">✊</div>
+      </button>
+      <button class="btn btn-square" id="paperBtn">
+        <div class="pick">✋</div>
+      </button>
+      <button class="btn btn-square" id="scissorsBtn">
+        <div class="pick">✌</div>
+      </button>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>
+      Sean Grant
+    </p>
+    <a href="https://github.com/pscgrant">
+      <i class="fab fa-github"></i>
+    </a>
+  </footer>
+  <div class="modal" id="endgameModal">
+    <p class="modal-title" id="endgameMessage"></p>
+    <button class="btn btn-restart" id="restartBtn">Play again?</button>
+  </div>
+  <div class="overlay" id="overlay"></div>
+  <script src="script.js"></script>
+</body>
+</html>
